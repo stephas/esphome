@@ -15,7 +15,6 @@ from esphome.const import (
     ICON_MOLECULE_CO2,
     ICON_RADIATOR,
     ICON_TIMER,  # baseline last stored age
-    ICON_TIMER_SAND,  # baseline ready countdown
     STATE_CLASS_MEASUREMENT,
     UNIT_PARTS_PER_BILLION,
     UNIT_PARTS_PER_MILLION,
@@ -83,7 +82,7 @@ CONFIG_SCHEMA = (
             ),
             cv.Optional(CONF_WARMUP_COUNTDOWN): sensor.sensor_schema(
                 unit_of_measurement=UNIT_SECOND,
-                icon=ICON_TIMER_SAND,
+                icon=ICON_TIMER,
                 accuracy_decimals=0,
                 entity_category=ENTITY_CATEGORY_DIAGNOSTIC,
                 state_class=STATE_CLASS_MEASUREMENT,
